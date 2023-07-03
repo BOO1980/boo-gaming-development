@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" id="BooViewport" content="width=device-width, initial-scale=1.0, maximum-scale=-1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta charset="UTF-8">
+    <title>Boo Slot Game</title>
+    <script type="text/javascript" type="module" src="booFW/booFW.js"></script>
+</head>
+<body>
+    <div id="gameLoader"><b>loading</b>...</div>
+    <div id="hbGameContainer"></div>
+
+    <script>
+        window.addEventListener("load", (event) => {
+            console.log("page is fully loaded");
+            const game = new Game();
+            game.init();
+        });
+    </script>
+</body>
+</html>
